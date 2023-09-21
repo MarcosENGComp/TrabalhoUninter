@@ -1,0 +1,203 @@
+<!-- Criação doctype HTML -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+   <!-- Script JS no arquivo HTML, assim que o usuário entrar no site, será identificado o tamanho da tela, caso for menor que 720p o menu se torna display none e no local aparecerá um botão de Barras de menu, que o usuário clicará para aparecer o menu suspenso -->
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector("#menu-bar").addEventListener("click", function(){
+                if(document.querySelector(".menu nav").style.display == 'none'){
+                    document.querySelector(".menu nav").style.display = 'flex';
+                }
+                else{
+                    document.querySelector(".menu nav").style.display = 'none';
+                }
+            });
+    // O resize foi criado para caso o usuário retornar a uma tela maior o menu padrão retornar ao normal, sem risco de desaparecer por completo
+            window.addEventListener("resize", function() {
+            if (window.innerWidth > 720) {
+                document.querySelector(".menu nav").style.display = 'flex';
+            } else {
+                document.querySelector(".menu nav").style.display = 'none';
+            }
+        });
+        };
+    </script>
+</head>
+
+<body>
+    <!-- Header contendo logo e menu -->
+    <header>
+        <div class="container">
+            <div class="menu">
+                <div class="logo"></div>
+                <div class="nav">
+                    <img src="assets/img/menu.png" alt="menu-bar" id="menu-bar">
+                    <nav>
+                        <ul>
+                            <li><a href="#sobre-mim">Sobre Mim</a></li>
+                            <li><a href="#formacao">Formação Educacional</a></li>
+                            <li><a href="#links">Links úteis</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- section com um pouco sobre mim, nele coloquei um article, e dentro coloquei o conteúdo, separando alguns pontos por divs -->
+    <section id="sobre-mim">
+        <div class="container">
+            <article class="sobre-mim-content">
+                <div class="title">
+                    <h1>SOBRE MIM - MARCOS FELIPE MIRA</h1>
+                </div>
+                <p>Tenho 25 anos, moro em Jaú-SP e iniciei os estudos no Centro Universitário Uninter, no curso de
+                    Análise e Desenvolvimento de sitemas no mês de maio de 2023</p>
+                <h2>Hobbies:</h2>
+                <ul>
+                    <li>- Séries</li>
+                    <li>- Animes</li>
+                    <li>- Mangás</li>
+                    <li>- Games</li>
+                </ul>
+
+                <h3>SÉRIES: </h3>
+                <p>Tenho um gosto por séries de TV que abrange diversos gêneros e temas. Recentemente, retomei
+                    "Supernatural" após uma pausa. Embora a série já tenha chegado ao seu final, estou ansioso para
+                    finalmente concluir essa jornada emocionante com os irmãos Winchester.</p>
+
+                <h3>ANIMES: </h3>
+                <p>Eu sou um fã de animes que gosta de tudo, desde os animes Shounen famosos, como "Dragon Ball" e
+                    "Naruto", até os menos conhecidos. Um anime que realmente me cativou recentemente foi "Mushoku
+                    Tensei", que segue a jornada de Rudeus Greyrat. A história é tão envolvente que comecei a ler o
+                    mangá para saber mais. Além disso, de vez em quando, eu também curto um bom romance, como
+                    "Toradora", para variar um pouco da ação intensa dos animes Shounen. Cada anime me proporciona uma
+                    experiência única que eu adoro explorar.</p>
+
+                <h3>MANGÁS: </h3>
+                <p>Com relação aos mangás, sou um grande entusiasta e tenho acompanhado de perto algumas séries.
+                    Recentemente, tenho acompanhado o mangá de "One Piece", ansiosamente esperando cada lançamento
+                    semanal. Além disso, tenho sido cativado pelo mangá de "Mushoku Tensei", que sai mensalmente</p>
+
+                <p>Outros mangás que já acompanhei ou ainda acompanho incluem "Jujutsu Kaisen", "Kimetsu no Yaiba",
+                    "Dragon Ball Super" e muitos outros. Essa paixão pelo mundo dos mangás me leva a explorar uma ampla
+                    variedade de histórias e estilos, e a expectativa por novos capítulos é sempre um destaque
+                    emocionante.</p>
+
+                <h3>GAMES: </h3>
+                <p>
+                    No mundo dos games, sou um entusiasta desde a minha infância, e minha paixão abrange diversos
+                    estilos. No entanto, os gêneros que mais me atraem são os RPGs (Role-Playing Games) e os FPS
+                    (First-Person Shooters).
+                </p>
+
+                <p>
+                    Tenho um carinho especial por várias franquias, entre elas, Mario, Crash, Call of Duty, Monster
+                    Hunter, Horizon Zero Dawn e Forbidden West, bem como Spider-Man, entre muitos outros. Essas
+                    franquias têm um lugar especial no meu coração, e a exploração de mundos ricos, ação emocionante e
+                    narrativas envolventes são algumas das razões pelas quais sou tão apaixonado por jogos.
+                </p>
+
+                <p>
+                    Em resumo, o universo dos games é uma parte essencial da minha vida desde criança, e minha
+                    preferência por RPGs e FPS se reflete em meu gosto por franquias variadas que oferecem experiências
+                    memoráveis e diversificadas.
+                </p>
+            </article>
+        </div>
+    </section>
+     <!-- section com um pouco sobre minha formação até o momento, nele coloquei o conteudo separando alguns pontos por divs -->
+    <section id="formacao">
+        <div class="container">
+            <div class="formacao-content">
+                <div class="title">
+                    <h1>FORMAÇÃO</h1>
+                </div>
+                <h3>Educação Básica: </h3>
+                <ul>
+                    <li>Escola Municipal Jayme de Oliveira e Souza: 1ª à 4ª série.</li>
+                    <li>Escola Estadual Alvaro Fraga Moreira: 5ª à 8ª série e 1º ao 3º colegial.</li>
+                </ul>
+
+                <h3>Educação Técnica: </h3>
+                <ul>
+                    <li>ETEC Joaquim Ferreira Do Amaral: Curso Técnico em Informática.</li>
+                    <li>Escola Profissionalizante Micro Way: Curso de Informática Básica.</li>
+                    <li>CEBRAC: Curso de Montagem e Manutenção de Computadores.</li>
+                </ul>
+
+                <h3>Educação Superior: </h3>
+                <ul>
+                    <li>Atualmente cursando Análise e Desenvolvimento de Sistemas (UNINTER) </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- section onde coloquei alguns links de algumas redes sociais minhas, separando por alguns divs e href -->
+    <section id="links">
+        <div class="container">
+            <div class="links-content">
+                <div class="title">
+                    <h1>LINKS ÚTEIS</h1>
+                </div>
+                <h3>Alguns projetos que fiz com HTML e CSS</h3>
+                <a href="https://marcosengcomp.github.io/LandingPage/" target="_blank">Landing Page Steam </a><br>
+                <a href="https://marcosengcomp.github.io/Projeto-AWAX/" target="_blank">Landing Page Project
+                    AWAX</a><br>
+                <a href="https://marcosengcomp.github.io/StarbucksPage/" target="_blank">Landing Page Starbucks</a><br>
+                <a href="https://marcosengcomp.github.io/LandingPageGoogle/" target="_blank">Landing Page Google</a>
+
+                <h2>Redes Sociais</h2>
+                <div class="social-icons">
+                    <a href="https://twitter.com/MarcosF93999214">
+                        <img src="assets/img/twitter.png" alt="twitter-logo" id="twitter">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100001960880001">
+                        <img src="assets/img/facebook.png" alt="facebook-logo" id="facebook">
+                    </a>
+                    <a href="https://www.linkedin.com/in/marcos-felipe-mira-262b4b238/">
+                        <img src="assets/img/linkedin.png" alt="linkedin" id="linkedin">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Nessa seção coloquei o formulário de contato, onde a pessoa pode digitar seu nome, sobrenome e mensagem que deseja colocar, todos os campos são requiridos para o envio -->
+    <section id="contato">
+        <div class="container">
+            <div class="contato-content">
+                <div class="title">
+                    <h1>CONTATO</h1>
+                </div>
+                <form>
+                    <div class="nomesobrenome">
+                        <input type="text" id="primeiro-nome" placeholder="NOME" maxlength="30" required>
+                        <input type="text" id="sobre-nome" placeholder="SOBRENOME" maxlength="30" required>
+                    </div>
+                    <input class="email" type="text" name="Email" placeholder="EMAIL" maxlength="30" required>
+                    <input class="message" type="textarea" name="message" placeholder="Message" maxlength="250" required>
+                    <button id="button-send">Enviar</button>
+                    <!-- <div class="nameemail">
+                        <input type="text" name="name" placeholder="Name" maxlength="30" required>
+                        <input type="email" name="mail" placeholder="Email" maxlength="30" required>
+                    </div>
+                    <input class="subject" type="text" name="Subject" placeholder="Subject" maxlength="20" required>
+                    <input class="message" type="textarea" name="message" placeholder="Message" maxlength="250" required>
+                    <a href="" class="button-send">Send Message</a> -->
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Footer simples para colocar meu nome como criador da página -->
+    <footer> Trabalho página pessoal Uninter - Marcos Felipe Mira</footer>
+</body>
+
+</html>

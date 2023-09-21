@@ -1,0 +1,324 @@
+/*estilização que pega a pagina inteira
+
+scroll-behavior: smooth --> quando clica no link que vai a algum ponto do site, achei que não houve deslizamento, foi bem direto até ir ao ponto específico, então encontrei esse comando que faz esse efeito ao clicar no link que vai até certo ponto da página
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*
+coloquei esse código pois caso algum elemento ultrapasse o width padrão da página ele não afetará o site com uma barra lateral, não aparecendo ao usuário
+*/
+body{
+    overflow-x: hidden;
+}
+
+/* CAMPOS ABAIXO CONTENDO AS ESTILIZAÇÕES RELACIONADAS AO HEADER*/
+header{
+    height: auto;
+    background-color: #000000;
+}
+.container{
+    max-width: 1140px;
+    height: auto;
+    margin: auto;
+}
+.menu{
+    max-width: inherit;
+    height: inherit;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    background-image: url('../img/user.jpg');
+    background-position: center;
+    margin-left: 15px;
+    border-radius: 50%;
+}
+
+#menu-bar{
+    display: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+nav ul {
+    display: flex;
+    margin-right: 15px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    margin-left: 5px;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+nav ul li a:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+/* CAMPOS ABAIXO CONTENDO AS ESTILIZAÇÕES RELACIONADAS A SEÇÃO SOBRE MIM*/
+#sobre-mim{
+    height: calc(100vh - 100px);
+    color: #ffffff;
+    height: auto;
+    line-height: 25px;
+}
+
+.sobre-mim-content{ 
+    padding: 50px;
+    text-align: justify;
+    background-color: #333;
+}
+.title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+h1, h2, h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p{
+    margin-bottom: 15px;
+}
+
+.sobre-mim-content ul{
+    margin-bottom: 20px;
+}
+.sobre-mim-content ul li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+/* CAMPOS ABAIXO CONTENDO AS ESTILIZAÇÕES RELACIONADAS A SEÇÃO SOBRE MINHA FORMAÇÃO*/
+#formacao{
+    height: auto;
+    line-height: 25px
+}
+
+.formacao-content{
+    line-height: 30px;
+    padding: 50px;
+    background-color: #ccc;
+    color: #000000;
+    text-align: justify;
+}
+
+.formacao-content ul{
+    margin-bottom: 30px;
+}
+
+/* CAMPOS ABAIXO CONTENDO AS ESTILIZAÇÕES RELACIONADAS A SEÇÃO DE LINKS RELACIONADOS A MIM*/
+
+#links{
+    line-height: 30px;
+}
+
+.links-content{
+    padding: 50px;
+    background-color: #ccc;
+    color: #000000;
+    text-align: justify;
+}
+
+.links-content a{
+    color: #ffffff;
+    display: inline-block;
+}
+
+.links-content a:hover{
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social-icons{
+    margin-top: 40px;
+}
+
+#twitter, #facebook, #linkedin{
+    width: 20px;
+    height: 20px;
+}
+.social-icons a{
+    background-color: #ffffff;
+    padding: 12px 17px;
+    color: #000000;
+    border-radius: 50%;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+
+.social-icons a:hover{
+    background-color: #ccc;
+}
+
+/* CAMPOS ABAIXO CONTENDO AS ESTILIZAÇÕES RELACIONADAS A SEÇÃO PARA CONTATO COMIGO*/
+
+#contato{
+    line-height: 30px;
+}
+
+.contato-content{
+    padding: 50px;
+    background-color: rgb(0, 0, 0, 0.90);
+    color: #ffffff;
+}
+
+
+form {
+    max-width: 600px;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #999;
+    caret-color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ffffff;
+}
+
+form input:focus {
+    outline: none;
+}
+
+form .nomesobrenome {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+form .nomesobrenome input {
+    flex: 1;
+}
+
+/*Na div nomesobrenome coloquei um flex para que os dois campos aparecam na mesma linha, delimiando o tamanho de ambos com flex 1 (para ocupar o mesmo espaço), porém para não ficarem grudados optei por colocar uma margem a direita no primeiro campo*/
+form .nomesobrenome input:first-child {
+    margin-right: 30px;
+}
+
+form .email {
+    margin-bottom: 50px;
+}
+
+form #button-send {
+    border: none;
+    margin: auto;
+    display: inline-block;
+    background-color: #ffffff;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+form #button-send:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+footer{
+    padding: 50px;
+    background-color: #ccc;
+    text-align: center;
+}
+
+/* RESPONSIVIDADE PARA PÁGINA ABAIXO DE 720px*/
+
+@media (max-width: 720px){
+    *{
+        font-size: 15px;
+    }
+
+    .sobre-mim-content, .formacao-content, .links-content{
+        text-align: initial;
+    }
+
+    /*AQUI, ABAIXO DE 720p O MENU BAR IRÁ APARECER*/
+    #menu-bar{
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+        margin-right: 30px;
+    }
+
+    /*AQUI, ABAIXO DE 720p O MENU BAR IRÁ DESAPARECER, PORÉM FEITO UMA CONFIGURAÇÃO QUE ALTERE A MANEIRA QUE ELE SERÁ MOSTRADO, CASO CLICAR NO MENU BAR, DELIMITANDO A POSIÇÃO, Z-INDEX E TAMANHOS*/
+    nav{
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 70vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li a {
+        font-weight: bold;
+        height: 80px;
+        font-size: 27px;
+        margin-left: 50px;
+        border: 0;
+    }
+
+    .menu li a:hover,
+    .menu li.active a {
+        border: 0;
+        color: #B28756
+    }
+
+    /* DEIXANDO A DIV NOMESOBRENOME COMO FLEX E COM DIREÇÃO COLUMN, PARA QUE TODOS CAMPOS TENHAM TAMANHOS DISPOSTOS SEMELHANTES*/
+    form .nomesobrenome {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    
+    form .nomesobrenome input{
+        margin-bottom: 30px;
+    }
+
+    form .nomesobrenome input:first-child {
+        margin-right: 0px;
+    }
+
+    .social-icons a{
+        padding: 7px 10px;
+    }
+}
