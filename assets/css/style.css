@@ -266,8 +266,8 @@ footer{
     }
 
     .logo{
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
     }
     /*AQUI, ABAIXO DE 720p O MENU BAR IRÁ APARECER*/
     #menu-bar{
@@ -287,6 +287,7 @@ footer{
         height: calc(100vh - 100px);
         top: 100px;
         right: 0;
+        padding-top: 20px;
     }
 
     .menu ul {
