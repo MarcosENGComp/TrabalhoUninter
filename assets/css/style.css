@@ -265,6 +265,10 @@ footer{
         text-align: initial;
     }
 
+    .logo{
+        width: 60px;
+        height: 60px;
+    }
     /*AQUI, ABAIXO DE 720p O MENU BAR IRÁ APARECER*/
     #menu-bar{
         display: flex;
@@ -300,7 +304,6 @@ footer{
     .menu li a:hover,
     .menu li.active a {
         border: 0;
-        color: #B28756
     }
 
     /* DEIXANDO A DIV NOMESOBRENOME COMO FLEX E COM DIREÇÃO COLUMN, PARA QUE TODOS CAMPOS TENHAM TAMANHOS DISPOSTOS SEMELHANTES*/
