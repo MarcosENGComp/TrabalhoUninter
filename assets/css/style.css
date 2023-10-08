@@ -1,3 +1,8 @@
+:root{
+    --primary-bg-color: #333;
+    --secundary-bg-color: #ccc;
+}
+
 /*estilização que pega a pagina inteira
 
 scroll-behavior: smooth --> quando clica no link que vai a algum ponto do site, achei que não houve deslizamento, foi bem direto até ir ao ponto específico, então encontrei esse comando que faz esse efeito ao clicar no link que vai até certo ponto da página
@@ -86,7 +91,7 @@ nav ul li a:hover{
 .sobre-mim-content{ 
     padding: 50px;
     text-align: justify;
-    background-color: #333;
+    background-color: var(--primary-bg-color);
 }
 .title{
     text-align: center;
@@ -118,7 +123,7 @@ p{
 .formacao-content{
     line-height: 30px;
     padding: 50px;
-    background-color: #ccc;
+    background-color: var(--secundary-bg-color);
     color: #000000;
     text-align: justify;
 }
@@ -135,8 +140,8 @@ p{
 
 .links-content{
     padding: 50px;
-    background-color: #ccc;
-    color: #000000;
+    background-color: var(--primary-bg-color);
+    color: #ffffff;
     text-align: justify;
 }
 
@@ -181,8 +186,8 @@ p{
 
 .contato-content{
     padding: 50px;
-    background-color: rgb(0, 0, 0, 0.90);
-    color: #ffffff;
+    background-color: var(--secundary-bg-color);
+    color: #000000;
 }
 
 
@@ -198,10 +203,9 @@ form input {
     background-color: transparent;
     border: none;
     border-bottom: 2px solid #999;
-    caret-color: #ffffff;
+    caret-color: #000000;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #ffffff;
 }
 
 form input:focus {
@@ -250,7 +254,8 @@ form #button-send:hover{
 
 footer{
     padding: 50px;
-    background-color: #ccc;
+    background-color: #000000;
+    color: #ffffff;
     text-align: center;
 }
 
